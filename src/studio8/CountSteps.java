@@ -23,8 +23,6 @@ import com.sun.swing.internal.plaf.synth.resources.synth_de;
 			Scanner sys = new Scanner(new File("data/wdata.csv"));
 			while(sys.hasNext()) {
 				System.out.println(sys.next());
-				sys.nextLine();
-				
 			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
