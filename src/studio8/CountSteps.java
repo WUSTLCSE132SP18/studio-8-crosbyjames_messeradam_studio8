@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+import com.sun.swing.internal.plaf.synth.resources.synth;
+import com.sun.swing.internal.plaf.synth.resources.synth_de;
+
 // TODO: Develop an algorithm to count steps in accelerometer data
 //    Major steeps:
 //       1. Create a class and main method.
@@ -20,6 +23,8 @@ import java.util.Scanner;
 			Scanner sys = new Scanner(new File("data/wdata.csv"));
 			while(sys.hasNext()) {
 				System.out.println(sys.next());
+				sys.nextLine();
+				
 			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
